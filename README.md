@@ -2,10 +2,10 @@
 
 Progress:
 - [ ] commiting guide
-- [ ] commit message convention
+- [x] commit message convention
 - [ ] branch naming scheme
 - [ ] pr naming scheme
-- [ ] github flow description
+- [x] github flow description
 - [ ] how to prs guide
 - [ ] how to issues guide
 - [ ] why you should use the `github issue notebooks` vscode extension
@@ -18,9 +18,66 @@ Progress:
 ## commiting guide: `atomic commits`
 
 
+
+---
+---
 ## commit message convention: `hrcc`
 
+`hrcc` is a commit message convention made by me, ashxi, in order to make a commit convention with the readability of putting whatever you want but the automatationability of the angular commit convention.
 
+in this git convention, it will mostly be used for squash commits from a feature branch to the dev branch.
+
+the syntax is as follows:
+
+### message
+- `type` message \[scope\]
+
+for example:
+
+- `add` hrrc explanation to \[readme\].md
+
+also, if the commit is a pr commit,
+make sure to add the pr to the end of the message as follows:
+
+- `add` hrrc explanation to \[readme\].md { #2 }
+
+### body
+there are two types of bodies depending on whether you are doing a squash commit or hotfix commits.
+
+hotfix:
+```
+explanation
+explanation
+etc...
+```
+
+squash:
+```
++ commit messages from squash
++ commit 2
++ commit 3
+
+explanation
+```
+
+### footer
+
+there is only 3 footers:
+
+- breaking changes (explained next): `!: `
+- reviewers: `reviewers: @ashxi`
+- notifications: `cc @ashxi`
+
+### breaking changes
+
+breaking changes in a commit are signified in two ways:
+
+`<!>` at the beginning of the commit message.
+
+`!: ` in the footers to tell you what broke.
+
+---
+---
 ## branch naming scheme: `hrbc`
 
 
