@@ -111,6 +111,9 @@ for example, look at pr #1.
 ---
 ### why merge for dev -> main?
 
+we use merge for dev -> main because of the fact that we only use squashes so the developers don't have to worry and it makes sense in the context of github flow.
+
+we use merges, because of instead of squashing all of the new developer commits into one commit for main, we instead make the `main` branch be a snapshot of the latest production-ready (new-version-ready) `dev` branch, and tag the main branch for both CD purposes and to mark previous version releases.
 
 ---
 ---
