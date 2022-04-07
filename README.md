@@ -18,8 +18,39 @@ Progress:
 ## commiting guide: `atomic commits`
 
 
+
+---
+---
 ## commit message convention: `hrcc`
 
+`hrcc` is a commit message convention made by me, ashxi, in order to make a commit convention with the readability of putting whatever you want but the automatationability of the angular commit convention.
+
+in this git convention, it will mostly be used for squash commits from a feature branch to the dev branch.
+
+the syntax is as follows:
+
+### message
+- `type` message \[scope\]
+
+for example:
+
+- `add` hrrc explanation to \[readme\].md
+
+### body
+there are two types of bodies depending on whether you are doing a squash commit or hotfix commits.
+
+hotfix:
+```
+explanation
+explanation
+etc...
+```
+
+squash:
+```
++ commit messages from squash
++ commit 2
++ commit 3
 
 ## branch naming scheme: `hrbc`
 
