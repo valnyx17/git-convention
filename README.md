@@ -27,6 +27,7 @@ Progress:
 ## pr naming scheme: `hrpr`
 
 ---
+---
 ## github flow description
 
 Github Flow is a lightweight, branch-based git workflow.
@@ -40,7 +41,22 @@ The main concepts I will be adressing here are these:
 - why we use squash when we do feature -> dev prs
 - why we use merge when we use dev -> main prs
 
+---
 ### main branch
+
+the main branch in a github flow repository is `main`. it could also be called `master`, `trunk`, etc.
+
+this branch is best described as the `production` branch.
+
+whenever you make a pr from dev (main development branch) to this branch, you are essentially releasing a new version of your software.
+
+what version means is up to you.
+
+whenever you release a new version, you tag it (`git tag` or github's web ui).
+
+tagging also allows for easy CD.
+
+---
 
 ### dev branch
 
@@ -52,6 +68,7 @@ The main concepts I will be adressing here are these:
 
 ### why merge for dev -> main?
 
+---
 ---
 
 ## how to prs guide
