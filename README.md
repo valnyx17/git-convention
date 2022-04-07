@@ -74,6 +74,13 @@ this is also the only branch allowed to be merged into `main`.
 
 ### feature branches
 
+these branches are the *pr branches*.
+
+basically, these branches are the `from` in `from -> to`, where `to` is always `dev`.
+
+the commits on these branches do not have to follow the `hrcc`, because when these are squash-commited, it will provide `hrcc` commits to the actual branches that have changelogs.
+
+these branches are allowed allow to be squashed, and only into `dev`.
 
 ---
 ### hotfix branches
