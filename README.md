@@ -52,6 +52,27 @@ squash:
 + commit 2
 + commit 3
 
+explanation
+```
+
+### footer
+
+there is only 3 footers:
+
+- breaking changes (explained next): `!: `
+- reviewers: `reviewers: @ashxi`
+- notifications: `cc @ashxi`
+
+### breaking changes
+
+breaking changes in a commit are signified in two ways:
+
+`<!>` at the beginning of the commit message.
+
+`!: ` in the footers to tell you what broke.
+
+---
+---
 ## branch naming scheme: `hrbc`
 
 
