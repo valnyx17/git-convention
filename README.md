@@ -36,6 +36,11 @@ for example:
 
 - `add` hrrc explanation to \[readme\].md
 
+also, if the commit is a pr commit,
+make sure to add the pr to the end of the message as follows:
+
+- `add` hrrc explanation to \[readme\].md { #2 }
+
 ### body
 there are two types of bodies depending on whether you are doing a squash commit or hotfix commits.
 
