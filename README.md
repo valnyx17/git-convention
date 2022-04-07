@@ -10,3 +10,32 @@ Progress:
 - [ ] how to issues guide
 - [ ] why you should use the `github issue notebooks` vscode extension
 - [ ] gh cli guide
+
+## Table Of Contents
+
+
+
+## commiting guide: `atomic commits`
+
+
+## commit message convention: `hrcc`
+
+
+## branch naming scheme: `hrbc`
+
+
+## pr naming scheme: `hrpr`
+
+
+## github flow description
+
+## how to prs guide
+
+
+## how to issues guide
+
+
+## why you should use the `github issue notebooks` vscode extension
+
+
+## gh cli guide
