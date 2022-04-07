@@ -29,6 +29,17 @@ Progress:
 
 ## github flow description
 
+Github Flow is a lightweight, branch-based git workflow.
+
+The main concepts I will be adressing here are these:
+
+- the main (prod) branch
+- the dev (develop) branch
+- feature branches
+- hotfix branches
+- why we use squash when we do feature -> dev prs
+- why we use merge when we use dev -> main prs
+
 ## how to prs guide
 
 
