@@ -100,6 +100,13 @@ a small explanatoin of a hotfix workflow:
 ---
 ### why squash for feature -> dev?
 
+we use squash when we do feature -> dev because it allows for the commits inside of the pr's `feature` branch to be anything (the developer doesn't have to worry about commit conventions), and then when the pr is finished it gets squashed into dev as a `hrcc` commit.
+
+if we didn't do this, it would require every developer to follow commit conventions and have to worry about all of that stuff. it's better for both ends.
+
+instead of every commit having to be formatted correctly, they just make sure the pr is named correctly according to `hrcc` and then they're done.
+
+for example, look at pr #1.
 
 ---
 ### why merge for dev -> main?
