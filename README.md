@@ -50,7 +50,7 @@ this branch is best described as the *production* branch.
 
 whenever you make a pr from dev (main development branch) to this branch, you are essentially releasing a new version of your software.
 
-what version means is up to you.
+what a version means is up to you.
 
 whenever you release a new version, you tag it (`git tag` or github's web ui).
 
