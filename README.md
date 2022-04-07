@@ -46,7 +46,7 @@ The main concepts I will be adressing here are these:
 
 the main branch in a github flow repository is `main`. it could also be called `master`, `trunk`, etc.
 
-this branch is best described as the `production` branch.
+this branch is best described as the *production* branch.
 
 whenever you make a pr from dev (main development branch) to this branch, you are essentially releasing a new version of your software.
 
@@ -60,13 +60,32 @@ tagging also allows for easy CD.
 
 ### dev branch
 
+the dev branch in a github flow repository is usually `dev`. it could also be called `develop`, `development`, `devel`, among other things.
+
+this branch is best described as *the latest development version*.
+
+all feature branches eventually end up squashed into here.
+
+this is the only branch besides `main` who has `hrcc` commit histories.
+
+this is also the only branch allowed to be merged into `main`.
+
+---
+
 ### feature branches
 
+
+---
 ### hotfix branches
 
+
+---
 ### why squash for feature -> dev?
 
+
+---
 ### why merge for dev -> main?
+
 
 ---
 ---
