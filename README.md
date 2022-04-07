@@ -2,10 +2,10 @@
 
 Progress:
 - [ ] commiting guide
-- [ ] commit message convention
+- [x] commit message convention
 - [ ] branch naming scheme
 - [ ] pr naming scheme
-- [ ] github flow description
+- [x] github flow description
 - [ ] how to prs guide
 - [ ] how to issues guide
 - [ ] why you should use the `github issue notebooks` vscode extension
