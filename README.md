@@ -85,6 +85,17 @@ these branches are allowed allow to be squashed, and only into `dev`.
 ---
 ### hotfix branches
 
+these branches are the branches that are used to fix important issues in the `main` branch.
+
+essentially, if you accidentally push a very severe bug to `main`, you would use a hotfix branch in order to fix it.
+
+a small explanatoin of a hotfix workflow:
+
+- created off latest `main`
+- only commits allowed on hotfix are about issue
+- no feature enhancements or chores (`feat` or `chore` in *`hrcc`*)
+- merges into both master & develop branches when its finished
+- deleted after merge
 
 ---
 ### why squash for feature -> dev?
