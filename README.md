@@ -26,7 +26,7 @@ Progress:
 
 ## pr naming scheme: `hrpr`
 
-
+---
 ## github flow description
 
 Github Flow is a lightweight, branch-based git workflow.
@@ -39,6 +39,20 @@ The main concepts I will be adressing here are these:
 - hotfix branches
 - why we use squash when we do feature -> dev prs
 - why we use merge when we use dev -> main prs
+
+### main branch
+
+### dev branch
+
+### feature branches
+
+### hotfix branches
+
+### why squash for feature -> dev?
+
+### why merge for dev -> main?
+
+---
 
 ## how to prs guide
 
