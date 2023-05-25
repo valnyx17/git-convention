@@ -4,13 +4,13 @@ Progress:
 
 - [ ] commiting guide
 - [x] commit message convention
-- [ ] branch naming scheme
+- [x] branch naming scheme
 - [x] pr naming scheme
 - [x] github flow description
 - [ ] how to prs guide
 - [ ] how to issues guide
 - [x] why you should use the `github issue notebooks` vscode extension
-- [ ] gh cli guide
+- [x] gh cli guide
 
 ## Table Of Contents
 
@@ -285,5 +285,9 @@ is:closed repo:kyoline/git-convention is:pr assignee:@me
 that is why you should start using github issue notebooks in your repositories.
 
 ## gh cli guide
+
+the github cli is too big of a program for me to easily explain here.
+
+here's a [great tutorial on it.](https://www.youtube.com/watch?v=BRAG1Kj4-Ss)
 
 [github issue notebooks]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-github-issue-notebooks
