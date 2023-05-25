@@ -115,6 +115,25 @@ this adds a new breaking feature or something idfk
 
 ## branch naming scheme: `hrbc`
 
+`<issue number>/[type]-message-in-kebab-case-{scope}`
+
+where:
+
+- `<issue number>` is the issue number.
+- `type` is the type of branch. it can either be `add` (or a variant of said word, such as `implement`) or `fix` (or a variant, such as `hotfix`).
+- `scope` is what it affects.
+
+example:
+
+```text
+42/[add]-branch-naming-scheme
+```
+
+- 42 is issue number.
+- the type is `add`.
+- no scope.
+- message is `add-branch-naming-scheme`.
+
 ## pr naming scheme: `hrpr`
 
 the pr naming scheme will essentially just be a version of the normal commit scheme, as a pr is basically just a massive commit.
