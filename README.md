@@ -5,7 +5,7 @@ Progress:
 - [ ] commiting guide
 - [x] commit message convention
 - [ ] branch naming scheme
-- [ ] pr naming scheme
+- [x] pr naming scheme
 - [x] github flow description
 - [ ] how to prs guide
 - [ ] how to issues guide
