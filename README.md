@@ -9,7 +9,7 @@ Progress:
 - [x] github flow description
 - [ ] how to prs guide
 - [ ] how to issues guide
-- [ ] why you should use the `github issue notebooks` vscode extension
+- [x] why you should use the `github issue notebooks` vscode extension
 - [ ] gh cli guide
 
 ## Table Of Contents
@@ -220,4 +220,29 @@ we use merges, because of instead of squashing all of the new developer commits 
 
 ## why you should use the `github issue notebooks` vscode extension
 
+[github issue notebooks] is a vscode extension that allows for jupyter-notebook
+like querying of github repos.
+
+here's an example query:
+
+```text
+is:closed repo:kyoline/git-convention
+```
+
+if you put that in a github issues notebook, and then run it, it will provide you a list of closed prs or issues that are in the repo kyoline/git-convention:
+
+![github issues example](github-issues-1.png)
+
+this extension can be used to do lots of different things, and i think you have already started seeing the possibilities.
+
+want to know all of the closed prs in repo kyoline/git-convention that are assigned to the currently signed in account?
+
+```text
+is:closed repo:kyoline/git-convention is:pr assignee:@me
+```
+
+that is why you should start using github issue notebooks in your repositories.
+
 ## gh cli guide
+
+[github issue notebooks]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-github-issue-notebooks
