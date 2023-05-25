@@ -1,6 +1,7 @@
 # ashley's `/git(hub)?/g` convention
 
 Progress:
+
 - [ ] commiting guide
 - [x] commit message convention
 - [ ] branch naming scheme
@@ -13,14 +14,11 @@ Progress:
 
 ## Table Of Contents
 
-
-
 ## commiting guide: `atomic commits`
 
-
-
 ---
 ---
+
 ## commit message convention: `hrcc`
 
 `hrcc` is a commit message convention made by me, ashxi, in order to make a commit convention with the readability of putting whatever you want but the automatationability of the angular commit convention.
@@ -30,43 +28,46 @@ in this git convention, it will mostly be used for squash commits from a feature
 the syntax is as follows:
 
 ### message
-- `type` message \[scope\]
+
+- [type] message {scope}
 
 for example:
 
-- `add` hrrc explanation to \[readme\].md
+- [add] hrcc explanation to {readme}.md
 
-also, if the commit is a pr commit,
-make sure to add the pr to the end of the message as follows:
-
-- `add` hrrc explanation to \[readme\].md { #2 }
+type can be anything you want, as long as any automation software you use understands it. same thing for scope.
 
 ### body
-there are two types of bodies depending on whether you are doing a squash commit or hotfix commits.
 
-hotfix:
-```
+there are two types of bodies depending on whether you are doing a squash commit or a normal commit.
+
+normal:
+
+```diff
 explanation
-explanation
-etc...
+
+(footer)
 ```
 
 squash:
-```
-+ commit messages from squash
-+ commit 2
-+ commit 3
+
+```diff
++ -> commit messages from squash
++ -> commit 2
++ -> commit 3
 
 explanation
+
+(footer)
 ```
 
 ### footer
 
 there is only 3 footers:
 
-- breaking changes (explained next): `!: `
-- reviewers: `reviewers: @ashxi`
-- notifications: `cc @ashxi`
+- breaking changes (explained next): `!: message`
+- reviewers: `reviewers: @kyoline, @kyoline2`
+- notifications: `cc @kyoline @kyoline2`
 
 ### breaking changes
 
@@ -74,17 +75,49 @@ breaking changes in a commit are signified in two ways:
 
 `<!>` at the beginning of the commit message.
 
-`!: ` in the footers to tell you what broke.
+`!:` in the footers to tell you what broke.
+
+example commit:
+
+```diff
+<!> [add] new breaking feature to {hrcc} > #2
++ -> new breaking feature
+
+this adds a new breaking feature or something idfk
+
+!: this breaks bc i changed the commit convention
+```
 
 ---
 ---
+
 ## branch naming scheme: `hrbc`
-
 
 ## pr naming scheme: `hrpr`
 
+the pr naming scheme will essentially just be a version of the normal commit scheme, as a pr is basically just a massive commit.
+
+the scheme is as follows:
+
+```diff
+[type] message {scope} > #prnumber
+```
+
+example, breaking changes with a squash body:
+
+```diff
+<!> [add] thing to {readme} > #3
++ -> readme thing
+
+description
+
+!: breaks stuff
+
+```
+
 ---
 ---
+
 ## github flow description
 
 Github Flow is a lightweight, branch-based git workflow.
@@ -99,6 +132,7 @@ The main concepts I will be adressing here are these:
 - why we use merge when we use dev -> main prs
 
 ---
+
 ### main branch
 
 the main branch in a github flow repository is `main`. it could also be called `master`, `trunk`, etc.
@@ -109,7 +143,7 @@ whenever you make a pr from dev (main development branch) to this branch, you ar
 
 what a version means is up to you.
 
-whenever you release a new version, you tag it (`git tag` or github's web ui).
+whenever you release a new version, you tag it (`git tag` or github's web ui). this axn be automated using a github workflow.
 
 tagging also allows for easy CD.
 
@@ -123,6 +157,8 @@ this branch is best described as *the latest development version*.
 
 all feature branches eventually end up squashed into here.
 
+it is also the "default" branch in github.
+
 this is the only branch besides `main` who has `hrcc` commit histories.
 
 this is also the only branch allowed to be merged into `main`.
@@ -135,18 +171,19 @@ these branches are the *pr branches*.
 
 basically, these branches are the `from` in `from -> to`, where `to` is always `dev`.
 
-the commits on these branches do not have to follow the `hrcc`, because when these are squash-commited, it will provide `hrcc` commits to the actual branches that have changelogs.
+the commits on these branches do not have to follow the `hrcc`, because when these are squash-commited, it will provide `hrcc` commits to the actual branches that have changelogs. it is recommended to follow it though.
 
-these branches are allowed allow to be squashed, and only into `dev`.
+these branches are only allowed to be squashed, and only into `dev`.
 
 ---
+
 ### hotfix branches
 
 these branches are the branches that are used to fix important issues in the `main` branch.
 
 essentially, if you accidentally push a very severe bug to `main`, you would use a hotfix branch in order to fix it.
 
-a small explanatoin of a hotfix workflow:
+a small explanation of a hotfix workflow:
 
 - created off latest `main`
 - only commits allowed on hotfix are about issue
@@ -155,6 +192,7 @@ a small explanatoin of a hotfix workflow:
 - deleted after merge
 
 ---
+
 ### why squash for feature -> dev?
 
 we use squash when we do feature -> dev because it allows for the commits inside of the pr's `feature` branch to be anything (the developer doesn't have to worry about commit conventions), and then when the pr is finished it gets squashed into dev as a `hrcc` commit.
@@ -166,6 +204,7 @@ instead of every commit having to be formatted correctly, they just make sure th
 for example, look at pr #1.
 
 ---
+
 ### why merge for dev -> main?
 
 we use merge for dev -> main because of the fact that we only use squashes so the developers don't have to worry and it makes sense in the context of github flow.
@@ -177,11 +216,8 @@ we use merges, because of instead of squashing all of the new developer commits 
 
 ## how to prs guide
 
-
 ## how to issues guide
 
-
 ## why you should use the `github issue notebooks` vscode extension
-
 
 ## gh cli guide
