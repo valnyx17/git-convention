@@ -37,11 +37,6 @@ for example:
 
 type can be anything you want, as long as any automation software you use understands it. same thing for scope.
 
-also, if the commit is a pr commit,
-make sure to add the pr to the end of the message as follows:
-
-- [add] hrcc explanation to {readme}.md > #2
-
 ### body
 
 there are two types of bodies depending on whether you are doing a squash commit or a normal commit.
@@ -99,6 +94,26 @@ this adds a new breaking feature or something idfk
 ## branch naming scheme: `hrbc`
 
 ## pr naming scheme: `hrpr`
+
+the pr naming scheme will essentially just be a version of the normal commit scheme, as a pr is basically just a massive commit.
+
+the scheme is as follows:
+
+```diff
+[type] message {scope} > #prnumber
+```
+
+example, breaking changes with a squash body:
+
+```diff
+<!> [add] thing to {readme} > #3
++ -> readme thing
+
+description
+
+!: breaks stuff
+
+```
 
 ---
 ---
