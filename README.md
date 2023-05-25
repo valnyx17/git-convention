@@ -1,4 +1,4 @@
-# ashley's `/git(hub)?/g` convention
+# dare's `/git(hub)?/g` convention
 
 Progress:
 
@@ -14,6 +14,28 @@ Progress:
 
 ## Table Of Contents
 
+- [dare's `/git(hub)?/g` convention](#dares-githubg-convention)
+  - [Table Of Contents](#table-of-contents)
+  - [commiting guide: `atomic commits`](#commiting-guide-atomic-commits)
+  - [commit message convention: `hrcc`](#commit-message-convention-hrcc)
+    - [message](#message)
+    - [body](#body)
+    - [footer](#footer)
+    - [breaking changes](#breaking-changes)
+  - [branch naming scheme: `hrbc`](#branch-naming-scheme-hrbc)
+  - [pr naming scheme: `hrpr`](#pr-naming-scheme-hrpr)
+  - [github flow description](#github-flow-description)
+    - [main branch](#main-branch)
+    - [dev branch](#dev-branch)
+    - [feature branches](#feature-branches)
+    - [hotfix branches](#hotfix-branches)
+    - [why squash for feature -\> dev?](#why-squash-for-feature---dev)
+    - [why merge for dev -\> main?](#why-merge-for-dev---main)
+  - [how to prs guide](#how-to-prs-guide)
+  - [how to issues guide](#how-to-issues-guide)
+  - [why you should use the `github issue notebooks` vscode extension](#why-you-should-use-the-github-issue-notebooks-vscode-extension)
+  - [gh cli guide](#gh-cli-guide)
+
 ## commiting guide: `atomic commits`
 
 ---
@@ -21,7 +43,7 @@ Progress:
 
 ## commit message convention: `hrcc`
 
-`hrcc` is a commit message convention made by me, ashxi, in order to make a commit convention with the readability of putting whatever you want but the automatationability of the angular commit convention.
+`hrcc` is a commit message convention made by me, dare, in order to make a commit convention with the readability of putting whatever you want but the automatationability of the angular commit convention.
 
 in this git convention, it will mostly be used for squash commits from a feature branch to the dev branch.
 
