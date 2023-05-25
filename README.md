@@ -29,46 +29,50 @@ the syntax is as follows:
 
 ### message
 
-- `type` message \[scope\]
+- [type] message {scope}
 
 for example:
 
-- `add` hrrc explanation to \[readme\].md
+- [add] hrcc explanation to {readme}.md
+
+type can be anything you want, as long as any automation software you use understands it. same thing for scope.
 
 also, if the commit is a pr commit,
 make sure to add the pr to the end of the message as follows:
 
-- `add` hrrc explanation to \[readme\].md { #2 }
+- [add] hrcc explanation to {readme}.md > #2
 
 ### body
 
-there are two types of bodies depending on whether you are doing a squash commit or hotfix commits.
+there are two types of bodies depending on whether you are doing a squash commit or a normal commit.
 
-hotfix:
+normal:
 
 ```diff
 explanation
-explanation
-etc...
+
+(footer)
 ```
 
 squash:
 
 ```diff
-+ commit messages from squash
-+ commit 2
-+ commit 3
++ -> commit messages from squash
++ -> commit 2
++ -> commit 3
 
 explanation
+
+(footer)
 ```
 
 ### footer
 
 there is only 3 footers:
 
-- breaking changes (explained next): `!:`
-- reviewers: `reviewers: @ashxi`
-- notifications: `cc @ashxi`
+- breaking changes (explained next): `!: message`
+- reviewers: `reviewers: @kyoline, @kyoline2`
+- notifications: `cc @kyoline @kyoline2`
 
 ### breaking changes
 
@@ -77,6 +81,17 @@ breaking changes in a commit are signified in two ways:
 `<!>` at the beginning of the commit message.
 
 `!:` in the footers to tell you what broke.
+
+example commit:
+
+```diff
+<!> [add] new breaking feature to {hrcc} > #2
++ -> new breaking feature
+
+this adds a new breaking feature or something idfk
+
+!: this breaks bc i changed the commit convention
+```
 
 ---
 ---
