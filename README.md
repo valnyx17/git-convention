@@ -143,7 +143,7 @@ whenever you make a pr from dev (main development branch) to this branch, you ar
 
 what a version means is up to you.
 
-whenever you release a new version, you tag it (`git tag` or github's web ui).
+whenever you release a new version, you tag it (`git tag` or github's web ui). this axn be automated using a github workflow.
 
 tagging also allows for easy CD.
 
@@ -157,6 +157,8 @@ this branch is best described as *the latest development version*.
 
 all feature branches eventually end up squashed into here.
 
+it is also the "default" branch in github.
+
 this is the only branch besides `main` who has `hrcc` commit histories.
 
 this is also the only branch allowed to be merged into `main`.
@@ -169,9 +171,9 @@ these branches are the *pr branches*.
 
 basically, these branches are the `from` in `from -> to`, where `to` is always `dev`.
 
-the commits on these branches do not have to follow the `hrcc`, because when these are squash-commited, it will provide `hrcc` commits to the actual branches that have changelogs.
+the commits on these branches do not have to follow the `hrcc`, because when these are squash-commited, it will provide `hrcc` commits to the actual branches that have changelogs. it is recommended to follow it though.
 
-these branches are allowed allow to be squashed, and only into `dev`.
+these branches are only allowed to be squashed, and only into `dev`.
 
 ---
 
@@ -181,7 +183,7 @@ these branches are the branches that are used to fix important issues in the `ma
 
 essentially, if you accidentally push a very severe bug to `main`, you would use a hotfix branch in order to fix it.
 
-a small explanatoin of a hotfix workflow:
+a small explanation of a hotfix workflow:
 
 - created off latest `main`
 - only commits allowed on hotfix are about issue
