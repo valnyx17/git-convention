@@ -2,7 +2,7 @@
 
 Progress:
 
-- [ ] commiting guide
+- [x] commiting guide
 - [x] commit message convention
 - [x] branch naming scheme
 - [x] pr naming scheme
@@ -37,6 +37,12 @@ Progress:
   - [gh cli guide](#gh-cli-guide)
 
 ## commiting guide: `atomic commits`
+
+this section is easier explained using a few articles online.
+here are the articles:
+
+- [make atomic git commits](https://www.aleksandrhovhannisyan.com/blog/atomic-git-commits/)
+- [atomic commits will help you git legit](https://dev.to/paulinevos/atomic-commits-will-help-you-git-legit-35i7)
 
 ---
 ---
