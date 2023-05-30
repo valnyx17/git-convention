@@ -1,17 +1,5 @@
 # dare's `/git(hub)?/g` convention
 
-Progress:
-
-- [x] commiting guide
-- [x] commit message convention
-- [x] branch naming scheme
-- [x] pr naming scheme
-- [x] github flow description
-- [ ] how to prs guide
-- [ ] how to issues guide
-- [x] why you should use the `github issue notebooks` vscode extension
-- [x] gh cli guide
-
 ## Table Of Contents
 
 - [dare's `/git(hub)?/g` convention](#dares-githubg-convention)
