@@ -260,6 +260,14 @@ we use merges, because of instead of squashing all of the new developer commits 
 
 ## how to prs guide
 
+[this guide](https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests) is a quite good guide to pull requests.
+
+pull requests usually rely on [issues](#how-to-issues-guide), so it is important to get those correct as well.
+
+pull requests usually also have to do with [projects](https://www.youtube.com/watch?v=lzpcyYIbHqE&list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H), and are very imporant to the github ecosystem.
+
+don't forget to also check out [hrpr](#pr-naming-scheme-hrpr).
+
 ## how to issues guide
 
 ## why you should use the `github issue notebooks` vscode extension
