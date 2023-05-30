@@ -270,6 +270,16 @@ don't forget to also check out [hrpr](#pr-naming-scheme-hrpr).
 
 ## how to issues guide
 
+[this video](https://www.youtube.com/watch?v=MvyGcLg6AvI) is a great guide on how issues work.
+
+issues are meant to be a "what should we do" sort of building block of github.
+
+you make an issue, you make a pr to solve said issue, you close the issue.
+
+or, it can be used as a roadmap, a task checklist to finally close when it's done.
+
+a lot of things can be done with issues, and if you want some examples, look at various github repos.
+
 ## why you should use the `github issue notebooks` vscode extension
 
 [github issue notebooks] is a vscode extension that allows for jupyter-notebook
