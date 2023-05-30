@@ -121,23 +121,20 @@ this adds a new breaking feature or something idfk
 
 ## branch naming scheme: `hrbc`
 
-`<issue number>/[type]-message-in-kebab-case-{scope}`
+`<issue number>/message-in-kebab-case`
 
 where:
 
 - `<issue number>` is the issue number.
-- `type` is the type of branch. it can either be `add` (or a variant of said word, such as `implement`) or `fix` (or a variant, such as `hotfix`).
-- `scope` is what it affects.
+- if you don't have a `<issue number>`, either remove it (`message-in-kebab-case`) or make it 0 (`0/message`).
 
 example:
 
 ```text
-42/[add]-branch-naming-scheme
+42/add-branch-naming-scheme
 ```
 
 - 42 is issue number.
-- the type is `add`.
-- no scope.
 - message is `add-branch-naming-scheme`.
 
 ## pr naming scheme: `hrpr`
