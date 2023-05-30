@@ -1,17 +1,5 @@
 # dare's `/git(hub)?/g` convention
 
-Progress:
-
-- [x] commiting guide
-- [x] commit message convention
-- [x] branch naming scheme
-- [x] pr naming scheme
-- [x] github flow description
-- [ ] how to prs guide
-- [ ] how to issues guide
-- [x] why you should use the `github issue notebooks` vscode extension
-- [x] gh cli guide
-
 ## Table Of Contents
 
 - [dare's `/git(hub)?/g` convention](#dares-githubg-convention)
@@ -260,7 +248,25 @@ we use merges, because of instead of squashing all of the new developer commits 
 
 ## how to prs guide
 
+[this guide](https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests) is a quite good guide to pull requests.
+
+pull requests usually rely on [issues](#how-to-issues-guide), so it is important to get those correct as well.
+
+pull requests usually also have to do with [projects](https://www.youtube.com/watch?v=lzpcyYIbHqE&list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H), and are very imporant to the github ecosystem.
+
+don't forget to also check out [hrpr](#pr-naming-scheme-hrpr).
+
 ## how to issues guide
+
+[this video](https://www.youtube.com/watch?v=MvyGcLg6AvI) is a great guide on how issues work.
+
+issues are meant to be a "what should we do" sort of building block of github.
+
+you make an issue, you make a pr to solve said issue, you close the issue.
+
+or, it can be used as a roadmap, a task checklist to finally close when it's done.
+
+a lot of things can be done with issues, and if you want some examples, look at various github repos.
 
 ## why you should use the `github issue notebooks` vscode extension
 
